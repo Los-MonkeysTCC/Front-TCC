@@ -1,0 +1,39 @@
+.selection
+{
+  background-color: #9A616D;
+}
+
+.card
+{
+  border-radius: 1rem;
+}
+.logo{
+  background-color: #2c4859;
+  height: 580px;
+  position: relative;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.fas {
+  color: #ff6219;
+}
+.fw-normal{
+  letter-spacing: 1px;
+}
+.mb-5{
+  color: #393f81;
+}
+.login{
+  background-color: #1d3340;
+}
+.card-body{
+  height: 500;
+}
+.logotipo{
+  top: 120px;
+  left: 50px;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+
+}

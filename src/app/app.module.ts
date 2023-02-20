@@ -31,6 +31,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ItensUpdateComponent } from './components/itens/itens-update/itens-update.component';
 import { LoginComponent } from './security/login/login.component';
+import { AuthService } from './security/login/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -66,7 +68,7 @@ import { LoginComponent } from './security/login/login.component';
     MatSortModule
 
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

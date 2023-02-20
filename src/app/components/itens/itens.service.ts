@@ -7,6 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: "root",
 })
 export class ItensService {
+  listById(clientId: number) {
+    throw new Error('Method not implemented.');
+  }
   
   baseUrl =  "http://localhost:3000/itens"
   

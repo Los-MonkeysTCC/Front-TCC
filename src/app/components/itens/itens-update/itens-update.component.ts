@@ -25,13 +25,18 @@ export class ItensUpdateComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.ItensService.readById(id!).subscribe;((itens: Itens) => {
-      this.itens = itens
+    const id = this.route.snapshot.paramMap.get("id")
+    this.ItensService.readById(id).subscribe;((itens) => {
+    this.itens = itens;
     });
   }
 
-  updateItens(): void {}
+  updateItens(): void {
+    this.ItensService.update(this.itens).subscribe(() => {
+    this.ItensService.showMessage("Produto Atualizado com sucesso")
+    this.router.navigate(["/Itens"]);
+    });
+  }
 
   cancel(): void {
     this.router.navigate(["/Itens"]);
